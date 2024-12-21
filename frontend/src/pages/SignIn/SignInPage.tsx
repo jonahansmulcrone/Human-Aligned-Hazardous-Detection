@@ -90,10 +90,9 @@ const SignInPage: React.FC = () => {
         let updatedValue: any;
 
         if (type === 'checkbox') {
-            // Explicitly check that the target is an HTMLInputElement and cast it as such
-            updatedValue = (e.target as HTMLInputElement).checked; // safely access 'checked'
+            updatedValue = (e.target as HTMLInputElement).checked;
         } else {
-            updatedValue = value; // For non-checkbox elements, just use the value
+            updatedValue = value;
         }
 
         setFormData((prevState) => ({
